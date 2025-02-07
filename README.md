@@ -2,6 +2,10 @@
 
 Este proyecto es un portfolio personal desarrollado con Next.js 13 usando el nuevo directorio `app`, Tailwind CSS, Framer Motion y Next Themes para el manejo del modo oscuro. La aplicación incluye secciones para About, Projects, Tech Stack y Contact, además de componentes interactivos y animaciones.
 
+## Vista Previa
+
+[Vista Previa de la App](https://67a6396fbb34e20088a1e2cf--portfolio-templatedemo.netlify.app/)
+
 ## Características
 
 - **Next.js 13 (app directory):** Uso de la última versión de Next.js con componentes del lado del servidor y del cliente.

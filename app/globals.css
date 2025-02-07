@@ -2,20 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Definición de variables de color en light mode */
 :root {
   --background: #ffffff;
   --foreground: #171717;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
+
+/* Cuando se activa el modo oscuro, agregando la clase "dark" en <html> o <body> */
+.dark {
+  --background: #0a0a0a;
+  --foreground: #ededed;
+}
+
+/* Transición suave para cambios de color */
 body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }

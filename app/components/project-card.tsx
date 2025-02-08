@@ -15,12 +15,12 @@ interface ProjectCardProps {
 }
 
 export default function ProjectCard({
-                                        title,
-                                        description,
-                                        image,
-                                        link,
-                                        tags,
-                                    }: ProjectCardProps) {
+    title,
+    description,
+    image,
+    link,
+    tags,
+}: ProjectCardProps) {
     return (
         <motion.div
             whileHover={{ scale: 1.05 }}
@@ -29,9 +29,10 @@ export default function ProjectCard({
             <Card className="overflow-hidden h-full flex flex-col">
                 <div className="relative aspect-video">
                     <Image
-                        src={image || "/placeholder.svg"}
+                        src={image}
                         alt={title}
-                        fill
+                        width={600}
+                        height={400}
                         className="object-cover transition-transform hover:scale-105"
                     />
                 </div>
@@ -44,8 +45,8 @@ export default function ProjectCard({
                                 key={tag}
                                 className="inline-flex items-center rounded-md bg-muted px-2 py-1 text-xs font-medium ring-1 ring-inset ring-gray-500/10"
                             >
-                {tag}
-              </span>
+                                {tag}
+                            </span>
                         ))}
                     </div>
                 </CardContent>

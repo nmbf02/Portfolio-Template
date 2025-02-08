@@ -36,19 +36,22 @@ export default function Page() {
         </div>
       </header>
 
-
       <main className="container px-4 md:px-6">
         <Parallax>
           <section id="about" className="py-24 md:py-32 lg:py-40">
             <div className="container px-4 md:px-6">
               <div className="flex flex-col items-center justify-center space-y-4 text-center">
-                <div className="space-y-2">
+                <div className="space-y-2 text-center">
+                  <p className="font-bold text-4xl sm:text-5xl md:text-6xl lg:text-7xl">
+                    Eleazar García
+                  </p>
                   <AnimatedText
                     text="Full Stack Developer"
-                    className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl"
+                    className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold tracking-tighter"
                   />
                   <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
-                    Building digital experiences with modern technologies. Focused on creating elegant solutions to complex problems.
+                    Building digital experiences with modern technologies. Focused on creating
+                    elegant solutions to complex problems.
                   </p>
                 </div>
                 <div className="space-x-4">
@@ -82,7 +85,7 @@ export default function Page() {
           </section>
         </Parallax>
 
-        <section id="projects" className="py-12 md:py-24 lg:py-32">
+        <section id="projects" className="py-12 md:py-24 lg:py-32 mt-16">
           <div className="container px-4 md:px-6">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-12 text-center">Projects</h2>
             <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
